@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 导入属性配置文件 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="noteService" class="com.guanly.note.noteService.NoteServiceImpl" autowire="byType" />
+       <bean id="daoService" class="com.guanly.note.noteService.dao.UserDaoImpl" autowire="byType" />
+</beans>
